@@ -2,6 +2,8 @@
   --fontstack-serif: "Lora", "Georgia", "Times New Roman", serif;
   --fontstack-sans: "Open Sans", "Helvetica", "Arial", sans-serif;
 
+  --color-white: #ffffff;
+
   --color-brand-bright1: #84664c;
   --color-brand-bright2: #b88e6a;
 
@@ -69,13 +71,13 @@ a {
 }
 
 /* ---------------------------------
-page
+container
 --------------------------------- */
 
-.c-page {
+.l-container {
   margin: 0 auto;
   max-width: 80rem;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 /* ---------------------------------
@@ -83,8 +85,19 @@ header
 --------------------------------- */
 
 .c-siteheader {
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 42px;
+  background-color: var(--color-white);
+}
+
+@media all and (min-width: 500px) {
+  .c-siteheader {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.c-siteheader__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -92,9 +105,7 @@ header
 }
 
 @media all and (min-width: 500px) {
-  .c-siteheader {
-    padding-top: 60px;
-    padding-bottom: 84px;
+  .c-siteheader__content {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -108,8 +119,13 @@ header
   font-size: 1rem;
   line-height: calc(24 / 16 * 1rem);
   font-family: var(--fontstack-sans);
+  text-transform: uppercase;
 
   color: var(--color-brand-dark1);
+}
+
+.c-siteheader__title > span {
+  font-weight: 400;
 }
 
 @media all and (min-width: 750px) {
@@ -149,6 +165,21 @@ header
 }
 
 /* ---------------------------------
+Main content
+--------------------------------- */
+
+.c-maincontent {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media all and (min-width: 750px) {
+  .c-maincontent {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* ---------------------------------
 Splitted layout
 --------------------------------- */
 
@@ -171,17 +202,31 @@ Splitted layout
 }
 
 /* ---------------------------------
+Content sections
+--------------------------------- */
+
+.c-contentsection + .c-contentsection {
+  margin-top: 24px;
+}
+
+@media all and (min-width: 750px) {
+  .c-contentsection + .c-contentsection {
+    margin-top: 36px;
+  }
+}
+
+/* ---------------------------------
 Footer
 --------------------------------- */
 
-.c-sitefooter {
+.c-sitefooter__copyright {
   padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: 400;
   font-size: calc(14 / 16 * 1rem);
   line-height: calc(18 / 14 * 1rem);
   font-family: var(--fontstack-sans);
-}
-
-.c-sitefooter > p {
   margin-bottom: 0;
 }

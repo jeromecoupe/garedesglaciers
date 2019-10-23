@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "https://garedesglaciers.netlify.com"
+  to = "https://www.garedesglaciers.com"
+  status = 301
+
+[[redirects]]
   from = "/"
   to = "/fr/"
   status = 301

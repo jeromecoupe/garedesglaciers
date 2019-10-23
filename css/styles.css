@@ -52,7 +52,7 @@ html {
 .c-h2 {
   margin-bottom: calc(18 / 16 * 1rem);
   font-weight: 600;
-  font-size: calc(16 / 16 * 1rem);
+  font-size: 1rem;
   line-height: calc(18 / 16 * 1rem);
   font-family: var(--fontstack-sans);
   color: var(--color-brand-dark1);
@@ -74,7 +74,7 @@ page
 
 .c-page {
   margin: 0 auto;
-  max-width: 68rem;
+  max-width: 80rem;
   padding: 30px;
 }
 
@@ -105,8 +105,8 @@ header
   margin-bottom: 1rem;
 
   font-weight: 600;
-  font-size: calc(16 / 16 * 1rem);
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: calc(24 / 16 * 1rem);
   font-family: var(--fontstack-sans);
 
   color: var(--color-brand-dark1);
@@ -136,7 +136,7 @@ header
 
 .c-lggnav__link {
   font-weight: 400;
-  font-size: calc(16 / 16 * 1rem);
+  font-size: 1rem;
   line-height: calc(18 / 16 * 1rem);
   font-family: var(--fontstack-sans);
 

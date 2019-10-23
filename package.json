@@ -1,0 +1,15 @@
+{
+  "name": "garedesglaciers_v2",
+  "version": "1.0.0",
+  "description": "temporary website for Gare des Glaciers",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jeromecoupe/garedesglaciers.git"
+  },
+  "author": "Jérôme Coupé",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jeromecoupe/garedesglaciers/issues"
+  },
+  "homepage": "https://github.com/jeromecoupe/garedesglaciers#readme"
+}

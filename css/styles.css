@@ -45,7 +45,7 @@ body {
 }
 
 /* ---------------------------------
-typography
+=typography
 --------------------------------- */
 html {
   font: 400 100%/1.5 var(--fontstack-serif);
@@ -61,7 +61,7 @@ html {
 }
 
 /* ---------------------------------
-Links
+=links
 --------------------------------- */
 
 a {
@@ -71,7 +71,7 @@ a {
 }
 
 /* ---------------------------------
-container
+=container
 --------------------------------- */
 
 .l-container {
@@ -81,7 +81,7 @@ container
 }
 
 /* ---------------------------------
-header
+=header
 --------------------------------- */
 
 .c-siteheader {
@@ -131,7 +131,6 @@ header
 @media all and (min-width: 750px) {
   .c-siteheader__title {
     margin-bottom: 0;
-    margin-right: 3rem;
   }
 }
 
@@ -144,6 +143,12 @@ header
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media all and (min-width: 750px) {
+  .c-lggnav {
+    justify-content: flex-end;
+  }
 }
 
 .c-lggnav__item:not(:last-child) {
@@ -165,7 +170,21 @@ header
 }
 
 /* ---------------------------------
-Main content
+=banner
+--------------------------------- */
+
+.c-sitebanner {
+  background-image: linear-gradient(
+    to top,
+    var(--color-brand-light1),
+    var(--color-brand-light1) 100px,
+    var(--color-white) 100px,
+    var(--color-white)
+  );
+}
+
+/* ---------------------------------
+=main content
 --------------------------------- */
 
 .c-maincontent {
@@ -180,7 +199,7 @@ Main content
 }
 
 /* ---------------------------------
-Splitted layout
+=splitted layout
 --------------------------------- */
 
 .l-splitted {
@@ -202,7 +221,7 @@ Splitted layout
 }
 
 /* ---------------------------------
-Content sections
+=content sections
 --------------------------------- */
 
 .c-contentsection + .c-contentsection {
@@ -229,4 +248,13 @@ Footer
   line-height: calc(18 / 14 * 1rem);
   font-family: var(--fontstack-sans);
   margin-bottom: 0;
+}
+
+/* ---------------------------------
+=fluid images
+--------------------------------- */
+
+.o-fluidimage {
+  max-width: 100%;
+  vertical-align: middle;
 }

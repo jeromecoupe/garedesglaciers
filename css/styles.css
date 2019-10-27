@@ -175,11 +175,11 @@ a {
 
 .c-sitebanner {
   background-image: linear-gradient(
-    to top,
-    var(--color-brand-light1),
-    var(--color-brand-light1) 100px,
-    var(--color-white) 100px,
-    var(--color-white)
+    to bottom,
+    var(--color-white),
+    var(--color-white) 50%,
+    var(--color-brand-light1) 50%,
+    var(--color-brand-light1)
   );
 }
 
